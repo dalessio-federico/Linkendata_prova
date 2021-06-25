@@ -1,0 +1,144 @@
+/* impostazioni pagina generiche */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( 45deg, #98f5ff, #b7ffb5);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* fine impostazioni generiche */
+.title  {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 5px 3px black;
+}
+
+.title h3 {
+    margin-bottom: 6px;
+}
+
+.inline_list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.inline_list li:first-child {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+/* impostazioni sezione titolo e dettagli lavoro */
+
+/* impostazioni form */
+.guest_form_data {
+    height: 150px;
+    width: 22%;
+    padding: 13px;
+    margin-bottom: 50px;
+    line-height: 70px;
+    background-color: #b6ffb9;
+    border-radius: 13px;
+    box-shadow: 4px 4px #00000063;
+}
+
+.guest_form_data form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form_group {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.form_group input {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #d7fffd;
+}
+
+.form_group button {
+    padding: 7px;
+    margin-left: 25px;
+    margin-top: 26px;
+    background-color: #d7fffd;
+    border-color: #d7fffd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* fine impostazioni form */
+
+/* impostazioni visualizzazione guest */
+
+/* Toggle menu info */
+input[type=checkbox] {
+    display: none;
+}
+.form-check input[type=checkbox] {
+    display: block;
+}
+.dropdown .drop_menu {
+    display: none;
+    width: 450px;
+    height: 264px;
+    padding: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b6ffb9;
+    border: 1px solid rgb(144, 252, 94);
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#cart_toggle:checked + .dropdown .drop_menu {
+    display: block;
+}
+/* fine toggle menu info */
+.btn-info {
+    padding: 7px;
+    margin-left: 25px;
+    margin-top: 26px;
+    background-color: #d7fffd;
+    border-color: #d7fffd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.inline_par {
+    display: inline-block;
+    margin-right: 5px;
+}
